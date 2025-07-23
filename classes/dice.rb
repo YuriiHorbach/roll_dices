@@ -2,11 +2,6 @@ class Dice
   attr_reader :last_roll
 
   def roll
-    @last_roll = rand(6) + 1
-    @last_roll
-  end
-
-  def roll
     raw_dice = generate_dice_raw_value
     @last_roll = raw_dice + 1
   end
